@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body>
+    <div class='container'>
+      <div id='welcome-page' class='js-section'>
+        <h1>Welcome to the Quiz App</h1>
+        <button id='welcome-submit' class='js-button' type='button'>Start Quiz</button>
+      </div>
+      
+      
+      
+      
+      <div id='question-answer' class='js-section'>
+        <form id='question'>
+          <p id='q-text'>Question 1</p>
+          <div id='answer'>
+            <input type='radio' id='answer1' name='answer' value='answer1'>
+            <label for='answer1'>Answer 1</label>
+            <input type='radio' id='answer2' name='answer' value='answer2'>
+            <label for='answer2'>Answer 2</label>
+            <input type='radio' id='answer3' name='answer' value='answer3'>
+            <label for='answer3'>Answer 3</label>
+            <input type='radio' id='answer4' name='answer' value='answer4'>
+            <label for='answer4'>Answer 4</label>
+          </div>
+          <div>
+            <button id='quiz-submit' class='js-button' type='submit'>Submit</button>
+          </div>
+        </form>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div id='end-of-quiz' class='js-section'>
+        <h3>End of Quiz</h3>
+        <p>your score is <span></span></p>
+        <p>out of <span></span></p>
+        <button id='end-submit' class='js-button' type='button'>Quiz Again</button>
+      </div>
+
+
+
+
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./render.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
