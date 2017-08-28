@@ -1,3 +1,12 @@
 .hidden {
   display: none;
 }
+
+.correct-answer {
+  color: #1cb71c;
+  font-weight: bold;
+}
+
+.wrong-answer {
+  color: red;
+}

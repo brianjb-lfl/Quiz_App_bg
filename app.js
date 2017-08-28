@@ -32,10 +32,20 @@ let STORE = {
       wAns2: 'Thames',
       wAns3: 'Tiber'},
   ],
-  appState: 'quiz',     // 'front', 'quiz', 'end'
+  appState: 'front',     // 'front', 'quiz', 'end'
   quizQ: 1,
-  quizQState: 'ask',      // 'ask', 'feedback'
-  quizScore: null
+  quizQState: 'ask',      // 'ask', 'feedback-C', 'feedback-W'
+  quizScore: null,
+  ansArr: [
+    {aID: 'cAns',
+      aRand: null},
+    {aID: 'wAns1',
+      aRand: null},
+    {aID: 'wAns2',
+      aRand: null},
+    {aID: 'wAns3',
+      aRand: null}],
+  userAns: null
 };
 
 // Front Handler
@@ -52,7 +62,18 @@ function quizHandler(){
   $('#question-answer').on('click', '#quiz-submit', event => {
     event.preventDefault();
     console.log('quiz handler ran');
-    STORE.appState = 'end';
+    //STORE.appState = 'end';
+    let inputValue = $('input[name=answer]:checked').val();
+    console.log(inputValue);
+    console.log(STORE.quizQs[0].cAns);
+    if (inputValue === 'cAns'){
+      STORE.quizQState = 'feedback-C';
+      STORE.quizScore += 1; 
+    } else {
+      STORE.quizQState = 'feedback-W';
+      STORE.userAns = inputValue;
+    }
+
     renderAppQuiz();
   });
 }
