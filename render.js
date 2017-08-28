@@ -3,6 +3,7 @@
 function renderAppQuiz(){
   console.log('render ran');
 
+  
   // randomize answer array
   if(STORE.appState === 'quiz' && STORE.quizQState === 'ask'){
     STORE.ansArr[0] = {aID: 'cAns', aRand: Math.random()};
@@ -32,6 +33,7 @@ function renderAppQuiz(){
     $('[for='+STORE.userAns+']').addClass('wrong-answer');
     $('[for=cAns]').addClass('correct-answer');
     $('#answer input[type=radio]').hide();
+    $('#quiz-submit').text('Next');
   }
 }
 

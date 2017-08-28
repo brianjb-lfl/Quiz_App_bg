@@ -62,18 +62,26 @@ function quizHandler(){
   $('#question-answer').on('click', '#quiz-submit', event => {
     event.preventDefault();
     console.log('quiz handler ran');
-    //STORE.appState = 'end';
-    let inputValue = $('input[name=answer]:checked').val();
-    console.log(inputValue);
-    console.log(STORE.quizQs[0].cAns);
-    if (inputValue === 'cAns'){
-      STORE.quizQState = 'feedback-C';
-      STORE.quizScore += 1; 
-    } else {
-      STORE.quizQState = 'feedback-W';
-      STORE.userAns = inputValue;
+    
+    if(STORE.quizQState === 'ask'){
+      let inputValue = $('input[name=answer]:checked').val();
+      console.log(inputValue);
+      console.log(STORE.quizQs[0].cAns);
+      if (inputValue === 'cAns'){
+        STORE.quizQState = 'feedback-C';
+        STORE.quizScore += 1; 
+      } else {
+        STORE.quizQState = 'feedback-W';
+        STORE.userAns = inputValue;
+      }
     }
-
+    else{
+      STORE.quizQ += 1;
+      STORE.quizQState = 'ask';
+    }
+  if (STORE.quizQ > STORE.quizQs.length){
+    STORE.appState = 'end';
+  }
     renderAppQuiz();
   });
 }
