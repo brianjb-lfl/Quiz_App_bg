@@ -85,7 +85,7 @@ function loadQs(){
   STORE.quizQs.push(
     {qID: 11,
       qTxt: 'Cryptozoology refers to the study of creatures which are __',
-      cAns: 'Mythical',
+      cAns: 'Mythical Creatures',
       wAns1: 'Nocturnal',
       wAns2: 'Underground',
       wAns3: 'Dead',

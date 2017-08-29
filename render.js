@@ -77,19 +77,3 @@ function getEndStr(){
 
 
 
-//taking 0 to 19 and randomise this number
-// for (let i = 0; i < 20; i++){
-// let arr.push(Math.floor(Math.random());
-// arr.sort
-// }
-
-// <p id='q-text'>${STORE.quizQs[arr[0]].qTxt}</p>
-
-// {qID: 1,
-//   qTxt: 'Which pop duo was the first western band to play in The Peoples Republic of China?',
-//   cAns: 'Wham',
-//   wAns1: 'Simon and Garfunkel',
-//   wAns2: 'Right Said Fred',
-//   wAns3: 'Duran Duran',
-//   qRand: null}
-// );

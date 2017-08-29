@@ -62,7 +62,7 @@ function quizHandler(){
 }
 
 function randAns(){
-  //console.log(STORE.ansArr);
+  console.log(STORE.ansArr);
   // STORE.ansArr[0] = {aID: 'cAns', aRand: Math.random()};
   // STORE.ansArr[1] = {aID: 'wAns1', aRand: Math.random()};
   // STORE.ansArr[2] = {aID: 'wAns2', aRand: Math.random()};
@@ -70,8 +70,9 @@ function randAns(){
   STORE.ansArr.forEach(function(ans){
     ans.aRand = Math.random();
   });
-  //console.log(STORE.ansArr);
   STORE.ansArr.sort((a,b) => a.aRand - b.aRand);
+  
+  console.log(STORE.ansArr);
 }
 
 function randQs(){
