@@ -37,15 +37,24 @@ function quizHandler(){
     console.log('quiz handler ran');
     
     if(STORE.quizQState === 'ask'){
+      //input validation
       let inputValue = $('input[name=answer]:checked').val();
-      STORE.userAns = inputValue;
-      if (inputValue === 'cAns'){
-        STORE.quizQState = 'feedback-C';
-        STORE.quizScore += 1; 
-      } else {
-        STORE.quizQState = 'feedback-W';
+      if(!inputValue){
+        alert("Please make your selection first.");
+      }
+      else{
+
+        console.log(inputValue);
+        STORE.userAns = inputValue;
+        if (inputValue === 'cAns'){
+          STORE.quizQState = 'feedback-C';
+          STORE.quizScore += 1; 
+        } else {
+          STORE.quizQState = 'feedback-W';
+        }
       }
     }
+
     else{
       STORE.quizQ += 1;
       STORE.quizQState = 'ask';
