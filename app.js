@@ -3,7 +3,7 @@ let STORE = {
   quizQs: [],             // question bank
   appState: 'front',      // 'front', 'quiz', 'end'
   quizQ: 1,               // current question in current quiz
-  quizNumQs: 3,           // total questions in current quiz
+  quizNumQs: 20,           // total questions in current quiz
   quizQState: 'ask',      // 'ask', 'feedback-C', 'feedback-W'
   quizScore: null,        // running score for current quiz
   ansArr: [               // answer order for current question
@@ -15,6 +15,7 @@ let STORE = {
       aRand: null},
     {aID: 'wAns3',
       aRand: null}],
+      
   userAns: null           // user answer for current question
 };
 
@@ -73,6 +74,15 @@ function randAns(){
   STORE.ansArr.sort((a,b) => a.aRand - b.aRand);
 }
 
+function randQs(){
+  
+  STORE.quizQs.forEach(function(item){
+    item.qRand = Math.random();
+  });
+  //console.log(STORE.ansArr);
+  STORE.quizQs.sort((a,b) => a.qRand - b.qRand);
+}
+
 // End Handler
 function endHandler(){
   $('#end-of-quiz').on('click', '#end-submit', event => {
@@ -86,6 +96,7 @@ function endHandler(){
 function initialize(){
   STORE.quizQ = 1;
   STORE.quizScore = 0;
+  randQs();
 }
 
 function handleQuizApp() {

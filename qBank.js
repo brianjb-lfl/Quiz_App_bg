@@ -7,7 +7,8 @@ function loadQs(){
       cAns: 'Wham',
       wAns1: 'Simon and Garfunkel',
       wAns2: 'Right Said Fred',
-      wAns3: 'Duran Duran'}
+      wAns3: 'Duran Duran',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 2,
@@ -15,7 +16,8 @@ function loadQs(){
       cAns: 'Netherlands',
       wAns1: 'Russia',
       wAns2: 'Canada',
-      wAns3: 'Norway'}
+      wAns3: 'Norway',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 3,
@@ -23,7 +25,8 @@ function loadQs(){
       cAns: 'Uncas',
       wAns1: 'Mingo',
       wAns2: 'Lightfoot',
-      wAns3: 'Magua'}
+      wAns3: 'Magua',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 4,
@@ -31,7 +34,8 @@ function loadQs(){
       cAns: 'Africa',
       wAns1: 'Australia',
       wAns2: 'North America',
-      wAns3: 'Asia'}
+      wAns3: 'Asia',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 5,
@@ -39,7 +43,8 @@ function loadQs(){
       cAns: 'Rubicon',
       wAns1: 'Danube',
       wAns2: 'Thames',
-      wAns3: 'Tiber'}
+      wAns3: 'Tiber',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 7,
@@ -47,7 +52,8 @@ function loadQs(){
       cAns: 'Karate',
       wAns1: 'Judo',
       wAns2: 'Akido',
-      wAns3: 'Jiu Jitsu'}
+      wAns3: 'Jiu Jitsu',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 8,
@@ -55,7 +61,8 @@ function loadQs(){
       cAns: 'Edgar Alan Poe',
       wAns1: 'Oscar Wilde',
       wAns2: 'Victor Hugo',
-      wAns3: 'Alfred Lord Tennyson'}
+      wAns3: 'Alfred Lord Tennyson',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 9,
@@ -63,7 +70,8 @@ function loadQs(){
       cAns: 'Fruits and seeds',
       wAns1: 'Fish',
       wAns2: 'Bones',
-      wAns3: 'Soil erosion'}
+      wAns3: 'Soil erosion',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 10,
@@ -71,7 +79,8 @@ function loadQs(){
       cAns: 'George Washington',
       wAns1: 'Thomas Jefferson',
       wAns2: 'Abraham Lincoln',
-      wAns3: 'Theodore Roosevelt'}
+      wAns3: 'Theodore Roosevelt',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 11,
@@ -79,7 +88,8 @@ function loadQs(){
       cAns: 'Mythical',
       wAns1: 'Nocturnal',
       wAns2: 'Underground',
-      wAns3: 'Dead'}
+      wAns3: 'Dead',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 12,
@@ -87,7 +97,8 @@ function loadQs(){
       cAns: 'Eye',
       wAns1: 'Neck',
       wAns2: 'Stomach',
-      wAns3: 'Heart'}
+      wAns3: 'Heart',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 13,
@@ -95,15 +106,17 @@ function loadQs(){
       cAns: 'Rain',
       wAns1: 'Alcohol',
       wAns2: 'Commitment',
-      wAns3: 'Insects'}
+      wAns3: 'Insects',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 14,
       qTxt: 'Ombrophobia is an irrational fear of what?',
-      cAns: '',
-      wAns1: '',
-      wAns2: '',
-      wAns3: ''}
+      cAns: 'Mythological creatures',
+      wAns1: 'Commitment',
+      wAns2: 'Large Storms',
+      wAns3: 'The Unknown',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 15,
@@ -111,7 +124,8 @@ function loadQs(){
       cAns: 'Mr Blonde',
       wAns1: 'Mr Orange',
       wAns2: 'Mr Brown',
-      wAns3: 'Mr Pink'}
+      wAns3: 'Mr Pink',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 16,
@@ -119,7 +133,8 @@ function loadQs(){
       cAns: 'Volkswagen',
       wAns1: 'Toyota',
       wAns2: 'The City of London',
-      wAns3: 'The US Dept of Transportation'}
+      wAns3: 'The US Dept of Transportation',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 17,
@@ -127,7 +142,8 @@ function loadQs(){
       cAns: 'Despicable Me',
       wAns1: 'Cars',
       wAns2: 'Wall-E',
-      wAns3: 'A Bugs Life'}
+      wAns3: 'A Bugs Life',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 18,
@@ -135,7 +151,8 @@ function loadQs(){
       cAns: 'Foo Fighters',
       wAns1: 'White Stripes',
       wAns2: 'Greenday',
-      wAns3: 'Sum 41'}
+      wAns3: 'Sum 41',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 19,
@@ -143,7 +160,8 @@ function loadQs(){
       cAns: '11',
       wAns1: '21',
       wAns2: '6',
-      wAns3: '7'}
+      wAns3: '7',
+      qRand: null}
   );
   STORE.quizQs.push(
     {qID: 20,
@@ -151,6 +169,7 @@ function loadQs(){
       cAns: 'Tom Cruise and Cuba Gooding (Jerry McGuire)',
       wAns1: 'Michael Douglas and Charlie Sheen (Wall Street)',
       wAns2: 'Vin Diesel (Boiler Room)',
-      wAns3: 'Leonardo DiCaprio (Wolf of Wall Street'}
+      wAns3: 'Leonardo DiCaprio (Wolf of Wall Street',
+      qRand: null}
   );
 }

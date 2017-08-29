@@ -45,7 +45,6 @@ function adjPanels(){
       break;
   }
 }
-
 function getQATempStr() {
   return `
   <h2 id="question-result"></h2>
@@ -73,5 +72,24 @@ function getEndStr(){
     <h2>End of Quiz</h2>
     <p>your score is <span class="score">${STORE.quizScore}</span> out of <span class="score">${STORE.quizNumQs}</span></p>
     <button id='end-submit' class='js-button' type='button'>Quiz Again</button>
-  `
+  `;
 }
+
+
+
+//taking 0 to 19 and randomise this number
+// for (let i = 0; i < 20; i++){
+// let arr.push(Math.floor(Math.random());
+// arr.sort
+// }
+
+// <p id='q-text'>${STORE.quizQs[arr[0]].qTxt}</p>
+
+// {qID: 1,
+//   qTxt: 'Which pop duo was the first western band to play in The Peoples Republic of China?',
+//   cAns: 'Wham',
+//   wAns1: 'Simon and Garfunkel',
+//   wAns2: 'Right Said Fred',
+//   wAns3: 'Duran Duran',
+//   qRand: null}
+// );
