@@ -9,4 +9,5 @@
 
 .wrong-answer {
   color: red;
+  font-weight: bold;
 }

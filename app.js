@@ -79,9 +79,9 @@ function quizHandler(){
       STORE.quizQ += 1;
       STORE.quizQState = 'ask';
     }
-  if (STORE.quizQ > STORE.quizQs.length){
-    STORE.appState = 'end';
-  }
+    if (STORE.quizQ > STORE.quizQs.length){
+      STORE.appState = 'end';
+    }
     renderAppQuiz();
   });
 }
