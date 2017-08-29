@@ -49,7 +49,7 @@ function adjPanels(){
 function getQATempStr(){
   return `
   <h2 id="question-result"></h2>
-  <h2>Question ${STORE.quizQ}</h2>
+  <h2>Question ${STORE.quizQ} of ${STORE.quizNumQs}</h2>
   <p id='q-text'>${STORE.quizQs[STORE.quizQ-1].qTxt}</p>
   <div id='answer'>
     <input type='radio' id='${STORE.ansArr[0].aID}' name='answer' value='${STORE.ansArr[0].aID}'>

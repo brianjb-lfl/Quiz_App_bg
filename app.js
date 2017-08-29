@@ -1,12 +1,12 @@
 'use strict';
 let STORE = {
-  quizQs: [],
-  appState: 'front',     // 'front', 'quiz', 'end'
-  quizQ: 1,
-  quizNumQs: 3,
+  quizQs: [],             // question bank
+  appState: 'front',      // 'front', 'quiz', 'end'
+  quizQ: 1,               // current question in current quiz
+  quizNumQs: 3,           // total questions in current quiz
   quizQState: 'ask',      // 'ask', 'feedback-C', 'feedback-W'
-  quizScore: null,
-  ansArr: [
+  quizScore: null,        // running score for current quiz
+  ansArr: [               // answer order for current question
     {aID: 'cAns',
       aRand: null},
     {aID: 'wAns1',
@@ -15,7 +15,7 @@ let STORE = {
       aRand: null},
     {aID: 'wAns3',
       aRand: null}],
-  userAns: null
+  userAns: null           // user answer for current question
 };
 
 // Front Handler
@@ -61,10 +61,15 @@ function quizHandler(){
 }
 
 function randAns(){
-  STORE.ansArr[0] = {aID: 'cAns', aRand: Math.random()};
-  STORE.ansArr[1] = {aID: 'wAns1', aRand: Math.random()};
-  STORE.ansArr[2] = {aID: 'wAns2', aRand: Math.random()};
-  STORE.ansArr[3] = {aID: 'wAns3', aRand: Math.random()};
+  console.log(STORE.ansArr);
+  // STORE.ansArr[0] = {aID: 'cAns', aRand: Math.random()};
+  // STORE.ansArr[1] = {aID: 'wAns1', aRand: Math.random()};
+  // STORE.ansArr[2] = {aID: 'wAns2', aRand: Math.random()};
+  // STORE.ansArr[3] = {aID: 'wAns3', aRand: Math.random()};
+  STORE.ansArr.forEach(function(ans){
+    ans.aRand = Math.random();
+  });
+  console.log(STORE.ansArr);
   STORE.ansArr.sort((a,b) => a.aRand - b.aRand);
 }
 
